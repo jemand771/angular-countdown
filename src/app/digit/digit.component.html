@@ -1,1 +1,6 @@
-<div>{{digit}}</div>
+<div class="parent">
+    <div style="position: relative; top: -100px;">
+        <div [@position]="isUp ? 'up' : 'down'" class="child">{{curDigit}}</div>
+    </div>
+    <div [@position]="isUp ? 'up' : 'down'" class="child">{{prevDigit}}</div>
+</div>

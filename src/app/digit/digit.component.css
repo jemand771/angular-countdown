@@ -1,4 +1,11 @@
-div {
+div.child {
     font-size: 96px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    width: fit-content;
+}
+div.parent{
+    position: relative;
+    width: 60px;
+    height: 160px;
 }

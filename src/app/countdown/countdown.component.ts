@@ -9,7 +9,7 @@ import { ModuloPopper } from 'src/util';
 })
 export class CountdownComponent implements OnInit {
 
-  target: number = 1656515741;
+  target: number = 1656615741;
   days: number = -1;
   hours: number = -1;
   minutes: number = -1;
@@ -18,6 +18,7 @@ export class CountdownComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.updateNumbers();
     setInterval(() => this.updateNumbers(), 100)
   }
 
