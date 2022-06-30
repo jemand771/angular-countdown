@@ -30,6 +30,5 @@ export class CountdownComponent implements OnInit {
     this.minutes = popper.pop(60);
     this.hours = popper.pop(24);
     this.days = popper.total;
-    console.log("update");
   }
 }
