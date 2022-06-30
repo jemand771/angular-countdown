@@ -9,7 +9,7 @@ import { ModuloPopper } from 'src/util';
 })
 export class CountdownComponent implements OnInit {
 
-  target: number = 1656615741;
+  target: number = 1660737600;
   days: number = -1;
   hours: number = -1;
   minutes: number = -1;
@@ -29,7 +29,7 @@ export class CountdownComponent implements OnInit {
     this.seconds = popper.pop(60);
     this.minutes = popper.pop(60);
     this.hours = popper.pop(24);
-    this.days = popper.pop(1);
+    this.days = popper.total;
     console.log("update");
   }
 }
