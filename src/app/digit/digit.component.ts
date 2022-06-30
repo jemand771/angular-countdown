@@ -15,10 +15,10 @@ import {
   animations: [
     trigger("position", [
       state("up", style({
-        top: 0,
+        top: -22,
       })),
       state("down", style({
-        top: 100
+        top: 78
       })),
       transition("down => up", [
 //         animate("0s")

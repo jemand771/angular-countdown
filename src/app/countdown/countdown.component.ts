@@ -29,7 +29,7 @@ export class CountdownComponent implements OnInit {
     this.seconds = popper.pop(60);
     this.minutes = popper.pop(60);
     this.hours = popper.pop(24);
-    this.days = popper.pop(1);;
+    this.days = popper.pop(1);
     console.log("update");
   }
 }
