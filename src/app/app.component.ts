@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ export class AppComponent implements AfterViewInit {
   @ViewChild("scale") div: any;
   scale: number = 0;
 
-  constructor() {
+  constructor(private titleService: Title) {
+    this.titleService.setTitle("Bachelorthesisabgabe")
     window.addEventListener("resize", () => this.resize())
   }
 
