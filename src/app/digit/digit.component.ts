@@ -47,6 +47,6 @@ export class DigitComponent implements OnInit {
     this.prevDigit = change.previousValue;
     this.isUp = true;
     this.curDigit = change.currentValue;
-    setInterval(() => this.isUp = false, 100);
+    setInterval(() => this.isUp = false, 1);
   }
 }
