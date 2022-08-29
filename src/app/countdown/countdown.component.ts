@@ -26,7 +26,7 @@ export class CountdownComponent implements OnInit {
 
   updateNumbers() {
     let ts = new Date().getTime() / 1000;
-    let diff = this.target - Math.round(ts);
+    let diff = Math.abs(this.target - Math.round(ts));
     let popper = new ModuloPopper(diff);
     this.seconds = popper.pop(60);
     this.minutes = popper.pop(60);
