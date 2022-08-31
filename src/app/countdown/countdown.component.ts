@@ -11,6 +11,7 @@ import { ModuloPopper } from 'src/util';
 })
 export class CountdownComponent implements OnInit {
 
+  title = environment.title;
   days: number = -1;
   hours: number = -1;
   minutes: number = -1;

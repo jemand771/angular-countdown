@@ -7,3 +7,4 @@ services:
       - 4201:80
     environment:
       END_TIME: "1660737600"
+      TITLE: foobar
