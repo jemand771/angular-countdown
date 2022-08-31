@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // @ts-ignore lol
+  end_time: +window["env"]["END_TIME"] || 0
 };
 
 /*

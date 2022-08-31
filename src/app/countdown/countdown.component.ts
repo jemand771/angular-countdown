@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { environment } from 'src/environments/environment';
 import { ModuloPopper } from 'src/util';
 
 
@@ -10,7 +11,6 @@ import { ModuloPopper } from 'src/util';
 })
 export class CountdownComponent implements OnInit {
 
-  target: number = 1660737600;
   days: number = -1;
   hours: number = -1;
   minutes: number = -1;
@@ -26,7 +26,7 @@ export class CountdownComponent implements OnInit {
 
   updateNumbers() {
     let ts = new Date().getTime() / 1000;
-    let diff = Math.abs(this.target - Math.round(ts));
+    let diff = Math.abs(environment.end_time - Math.round(ts));
     let popper = new ModuloPopper(diff);
     this.seconds = popper.pop(60);
     this.minutes = popper.pop(60);
