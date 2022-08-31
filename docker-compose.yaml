@@ -6,4 +6,4 @@ services:
     ports:
       - 4201:80
     environment:
-      END_TIME: "1661928719"
+      END_TIME: "1660737600"
